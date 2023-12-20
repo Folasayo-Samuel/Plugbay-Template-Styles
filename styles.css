@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.content {
+    color: #333;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.user-name {
+    color: #333;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 30px;
+}
+
+.horizontal-line {
+    height: 1px;
+    background: #D9D9D9;
+    margin: 20px 0; /* Adjusted margin for spacing */
+}
+
+.playstore-apple-icons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.apple-icons {
+    width: 180px;
+    height: 39px;
+}
+
+.google-play-icon {
+    margin-top: -19px;
+    height: 81px;
+    width: 180px;
+}
+
+.sub-footer {
+    color: #333;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-list {
+    color: rgba(0, 0, 0, 0.70);
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    color: rgba(0, 0, 0, 0.70);
+    margin-right: 13px;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    #container {
+        padding: 10px;
+        height: 100%;
+
+    }
+
+    .playstore-apple-icons {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .apple-icons{
+        width: 100px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    .google-play-icon {
+        width: 100px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    footer{
+        margin-bottom: 0 !important;
+    }
+}
